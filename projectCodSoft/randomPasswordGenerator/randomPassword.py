@@ -9,18 +9,6 @@ symbols = "!@#$%^&*()"
 all_chars = lowercase + uppercase + digits + symbols
 
 def generate_password(length, include_uppercase, include_digits, include_symbols):
-  """
-  Generates a random password based on specified criteria.
-
-  Args:
-      length (int): Desired length of the password.
-      include_uppercase (bool): Whether to include uppercase letters.
-      include_digits (bool): Whether to include digits.
-      include_symbols (bool): Whether to include symbols.
-
-  Returns:
-      str: The generated random password.
-  """
   password_chars = ""
   if include_uppercase:
     password_chars += uppercase
